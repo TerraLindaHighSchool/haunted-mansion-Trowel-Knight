@@ -1,27 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!195 &5368385912066715743
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321779377777191297}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.26
-  m_Speed: 1.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &5606206212951750688
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +108,7 @@ GameObject:
   - component: {fileID: 2200242540573182406}
   - component: {fileID: 1868785308252741893}
   - component: {fileID: 2678541531795094929}
+  - component: {fileID: 3941735500568130365}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -215,8 +194,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9695a69c1c8504ba10de401c960f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navMeshAgent: {fileID: 5368385912066715743}
+  navMeshAgent: {fileID: 0}
   waypoints: []
+--- !u!195 &3941735500568130365
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5606206212951750690}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5606206212951750692
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,12 +906,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a833f1d9f7749409d8d7dce6a27dcc, type: 3}
---- !u!1 &321779377777191297 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3203809121581178614, guid: 61a833f1d9f7749409d8d7dce6a27dcc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2882593793284257655}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6189378613631650890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9071393992651717437, guid: 61a833f1d9f7749409d8d7dce6a27dcc,
